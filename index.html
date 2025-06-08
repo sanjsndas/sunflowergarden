@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sunflower Garden Pruning - Expert Pruning Services</title>
+<style>
+  :root {
+    --sunflower-yellow: #FFC312;
+    --green-dark: #006400;
+    --green-light: #4CAF50;
+    --beige-light: #fff8dc;
+    --gray-dark: #333;
+    --brown-dark: #5a4d41;
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Open Sans', Arial, sans-serif;
+  }
+  /* Import fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+  body {
+    margin: 0;
+    background-color: var(--beige-light);
+    font-family: var(--font-sans);
+    color: var(--gray-dark);
+    line-height: 1.70;
+  }
+  header {
+    background-color: var(--green-dark);
+    padding: 3rem 3rem 3rem;
+    text-align: center;
+    border-bottom-left-radius: 75% 25%;
+    border-bottom-right-radius: 75% 25%;
+    box-shadow: 0 7px 15px rgba(0,0,0,0.25);
+    color: white;
+  }
+  header h1 {
+    font-family: var(--font-serif);
+    font-size: 3.2rem;
+    margin: 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+  nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 01rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: var(--beige-light);
+  }
+  main {
+    max-width: 900px;
+    margin: -4rem auto 4rem;
+    background: white;
+    border-radius: 18px;
+    padding: 3rem 3rem 4rem;
+    box-shadow: 0 0 35px rgba(0,0,0,0.07);
+  }
+  section {
+    border-bottom: 1px solid #ddd7a3;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  section:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  h2 {
+    font-family: var(--font-serif);
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: var(--green-dark);
+    position: relative;
+    padding-bottom: 0.6rem;
+  }
+  h2::after {
+    content: '';
+    width: 70px;
+    height: 6px;
+    background: var(--sunflower-yellow);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+  }
+  p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: 1.4rem;
+    font-weight: 400;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+  .service-card {
+    background: var(--beige-light);
+    padding: 1.8rem 1.6rem 2rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 15px rgba(255, 195, 18,0.15);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+  }
+  .service-card:hover,
+  .service-card:focus-within {
+    box-shadow: 0 15px 25px rgba(255, 195, 18,0.3);
+  }
+  .service-card img {
+    border-radius: 14px;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  }
+  .service-card h3 {
+    font-family: var(--font-serif);
+    color: var(--brown-dark);
+    font-size: 1.6rem;
+    margin: 0 0 0.9rem 0;
+  }
+  .service-card p {
+    flex-grow: 1;
+    font-weight: 600;
+    color: var(--green-dark);
+  }
+  .price-tag {
+    margin-top: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--sunflower-yellow);
+    text-align: right;
+    letter-spacing: 0.05em;
+  }
+  .feature-image {
+    width: 100%;
+    border-radius: 20px;
+    margin: 2rem 0 2.4rem;
+    box-shadow: 0 10px 25px rgba(255, 195, 18, 0.25);
+  }
+  .disclaimer, .customer-satisfaction {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-top: 0.8rem;
+  }
+  .customer-satisfaction {
+    font-weight: 600;
+  }
+  footer {
+    background-color: var(--green-dark);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    border-top: 3px solid var(--sunflower-yellow);
+  }
+  footer p {
+    margin: 0.3rem 0;
+  }
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 3px;
+    }
+    main {
+      margin: -3rem 1rem 2rem;
+      padding: 2.1rem 1.5rem 3rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Sunflower Garden Pruning</h1>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy </a>
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="cookies.html">Cookies </a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">Welcome to Sunflower Garden Pruning</h2>
+      <p>
+        At Sunflower Garden Pruning, we specialize in nurturing your garden's life through expert pruning services. With more than a decade of horticultural experience, our dedicated team is passionate about shaping landscapes that thrive beautifully and sustainably.
+      </p>
+      <p>
+        Effective pruning is the cornerstone of garden health, unlocking potential growth, enhancing flowering, and preventing the spread of diseases. By carefully assessing each plant’s unique characteristics, our pruning practices are tailored to nurture vitality and form breathtaking aesthetics.
+      </p>
+      <p>
+        We serve dreamy residential gardens, bustling commercial landscapes, and dedicated orchard owners with the same commitment to quality and personalized care. Our sustainable approaches ensure harmony between humans and nature, fostering ecosystems where wildlife and plants flourish together.
+      </p>
+      <p>
+        Discover the art of pruning transformed into a lasting garden legacy. Our service portfolio below richly details offerings and transparent pricing designed to suit every garden’s needs.
+      </p>
+      <img
+        src="p1.jpg"
+        alt="Expert pruning gardener clipping tree branches"
+        class="feature-image"
+      />
+      <p>
+        Ignoring regular pruning can lead to overcrowded branches, reduced sunlight exposure, and increased disease risk. Let us administer precise cuts that revive your plants’ energy, sculpt their natural form, and prepare them for flourishing seasons ahead.
+      </p>
+      <p>
+        Partner with Sunflower Garden Pruning for impeccable garden care that resonates beauty, longevity, and environmental respect.
+      </p>
+    </section>
+
+    <section aria-labelledby="services-title">
+      <h2 id="services-title">Our Services & Pricing</h2>
+      <div class="services-grid">
+        <article class="service-card" tabindex="0" aria-label="Tree pruning service">
+          <img src="s1.jpg" alt="Pruning mature tree branches" />
+          <h3>Tree Pruning</h3>
+          <p>Carefully remove deadwood and shape tree canopies to improve safety, aesthetics, and tree health. Appropriate for fruit, shade, and ornamental trees.</p>
+          <div class="price-tag">Starting at $120 per tree</div>
+        </article>
+        <article class="service-card" tabindex="0" aria-label="Shrub and hedge pruning service">
+          <img src="s2.jpg" alt="Trimming shaped hedges" />
+          <h3>Shrub & Hedge Pruning</h3>
+          <p>Maintain tidy shapes and encourage healthy growth for hedges and shrubs with tailored pruning methods that complement your landscape design.</p>
+          <div class="price-tag">Starting at $65 per hour</div>
+        </article>
+        <article class="service-card" tabindex="0" aria-label="Flowering plant pruning service">
+          <img src="s3.jpg" alt="Pruning flowering bushes" />
+          <h3>Flowering Plant Pruning</h3>
+          <p>Enhance bloom production and prolong flowering seasons with seasonal pruning catered to perennials and annuals.</p>
+          <div class="price-tag">Starting at $50 per session</div>
+        </article>
+        <article class="service-card" tabindex="0" aria-label="Fruit tree pruning service">
+          <img src="s4.jpg" alt="Pruning fruit orchard trees" />
+          <h3>Fruit Tree Pruning</h3>
+          <p>Maximize fruit yield and maintain tree health by improving sunlight access and airflow through expert pruning techniques.</p>
+          <div class="price-tag">Starting at $140 per tree</div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="disclaimer-title">
+      <h2 id="disclaimer-title">Disclaimer</h2>
+      <p class="disclaimer">
+        Pricing is an estimate and may vary depending on specific tree size, location accessibility, and complexity of work. Environmental conditions and unforeseen factors can affect service outcomes.
+      </p>
+      <p class="disclaimer">
+        While we adhere to the highest safety and horticultural standards, plant health is subject to natural variability beyond our control. We recommend ongoing maintenance to sustain garden vitality.
+      </p>
+    </section>
+
+    <section aria-labelledby="satisfaction-title">
+      <h2 id="satisfaction-title">Customer Satisfaction</h2>
+      <p class="customer-satisfaction">
+        We stand behind our craftsmanship and strive to exceed your expectations. If you experience any issue with our service, please notify us promptly—we are dedicated to resolving your concerns with professionalism and care.
+      </p>
+      <p class="customer-satisfaction">
+        Experience the joy of a flourishing garden nurtured by Sunflower Garden Pruning.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Address:</strong> 789 Blossom Lane, Sunnyville, CA 90210</p>
+    <p><strong>Phone:</strong> (865) 997-6543</p>
+    <p>&copy; 2024 Sunflower Garden Pruning. All rights reserved.</p>
+  </footer>
+</body>
+</html>
